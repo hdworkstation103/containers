@@ -7,7 +7,8 @@ ENV PATH="${PATH}:/workspace/stable-diffusion-webui/venv/bin"
 WORKDIR /
 
 RUN rm /workspace/v1-5-pruned-emaonly.ckpt
-RUN wget -O model.safetensors https://civitai.com/api/download/models/5616
+RUN wget -O model.safetensors https://civitai.com/api/download/models/11811
+RUN wget -0 model.vae.pt https://civitai.com/api/download/models/11811?type=VAE&format=Other
 RUN pip install -U xformers
 RUN pip install runpod
 
